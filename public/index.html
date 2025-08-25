@@ -24,7 +24,7 @@
 <body>
   <main class="wrap">
     <!-- Hero -->
-    <header class="hero reveal">
+    <header class="hero">
       <img src="/logo.jpg" alt="AIVAR logo" class="logo"/>
       <h1>AIVAR</h1>
       <p class="tag">Artificial Intelligence Video Assisted Refereeing</p>
@@ -32,138 +32,114 @@
       <div class="cta-row">
         <a class="btn" href="mailto:jagadaledhanraj555+info@gmail.com">Contact</a>
         <a class="btn ghost" href="mailto:jagadaledhanraj555+careers@gmail.com">Internships</a>
-        <!-- Replace mailto with your Google Form when ready -->
-        <a class="btn" href="mailto:jagadaledhanraj555+careers@gmail.com">Apply now</a>
       </div>
     </header>
 
-    <!-- About (collapsible) -->
-    <details class="disclosure reveal" open>
-      <summary>About</summary>
-      <div class="content">
-        <p>AIVAR is a sports technology initiative focused on fair and fast referee support systems.</p>
-      </div>
-    </details>
+    <!-- About (very high level) -->
+    <section class="card">
+      <h2>About</h2>
+      <p>AIVAR is a sports technology initiative focused on fair and fast referee support systems.</p>
+    </section>
 
-    <!-- Ecosystem (collapsible, minimal) -->
-    <details class="disclosure reveal" open>
-      <summary>Our Ecosystem</summary>
-      <div class="content">
-        <div class="ecos">
-          <!-- Anuja Smart Farming -->
-          <div class="ecos-item">
-            <img src="/anuja-smart-farming.png" alt="Anuja Smart Farming" class="partner-logo" loading="lazy"/>
-            <div class="ecos-text">
-              <div class="ecos-title">Anuja Smart Farming</div>
-              <div class="ecos-sub">National smart farming partner program</div>
-              <div class="ecos-status">Status: Building</div>
-              <a class="link" href="https://anuja-smart-farming-web.streamlit.app/" target="_blank" rel="noopener">Partner link</a>
-            </div>
-          </div>
-
-          <!-- Anuja Sports University -->
-          <div class="ecos-item">
-            <div class="partner-logo placeholder" aria-hidden="true"></div>
-            <div class="ecos-text">
-              <div class="ecos-title">Anuja Sports University</div>
-              <div class="ecos-sub">Yet to come</div>
-              <div class="ecos-status">Status: Planning</div>
-            </div>
+    <!-- Ecosystem (minimal) -->
+    <section class="card">
+      <h2>Our Ecosystem</h2>
+      <div class="ecos">
+        <!-- Anuja Smart Farming -->
+        <div class="ecos-item">
+          <img src="/anuja-smart-farming.png" alt="Anuja Smart Farming" class="partner-logo"/>
+          <div class="ecos-text">
+            <div class="ecos-title">Anuja Smart Farming</div>
+            <div class="ecos-sub">National smart farming partner program</div>
+            <div class="ecos-status">Status: Building</div>
+            <a class="link" href="https://anuja-smart-farming-web.streamlit.app/" target="_blank" rel="noopener">Partner link</a>
           </div>
         </div>
 
-        <div class="center group-block">
-          <img src="/ANUJA GROUP.png" alt="ANUJA GROUP" class="group-logo" loading="lazy" onerror="this.style.display='none'"/>
-          <p class="muted small">Ecosystem head group</p>
-        </div>
-
-        <p class="muted small">Descriptions are intentionally minimal; full details will be announced later.</p>
-      </div>
-    </details>
-
-    <!-- Contact + Roles (collapsible) -->
-    <details class="disclosure reveal" open>
-      <summary>Contact & Student Contributor Roles</summary>
-      <div class="content">
-        <div class="grid">
-          <div>
-            <h3>Contact</h3>
-            <ul class="list">
-              <li>General: <a href="mailto:jagadaledhanraj555+info@gmail.com">jagadaledhanraj555+info@gmail.com</a></li>
-              <li>Careers / Internships: <a href="mailto:jagadaledhanraj555+careers@gmail.com">jagadaledhanraj555+careers@gmail.com</a></li>
-            </ul>
-            <p class="muted small">Domain-based emails will be activated later; internal aliases are in use.</p>
-          </div>
-
-          <div>
-            <h3>Student Contributor Roles (Current Phase)</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Responsibility</th>
-                  <th>Focus Area</th>
-                  <th>Skill Development</th>
-                  <th>Required Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Tagging sports footage using predefined labels</td>
-                  <td>Annotation</td>
-                  <td>Decision-making & rule interpretation</td>
-                  <td>Basic football rules, attention to detail</td>
-                </tr>
-                <tr>
-                  <td>Organizing clips by event type</td>
-                  <td>Data Structuring</td>
-                  <td>Taxonomy mapping & classification</td>
-                  <td>File organization, logical thinking</td>
-                </tr>
-                <tr>
-                  <td>Preparing structured data exports</td>
-                  <td>Data Handling</td>
-                  <td>Format conversion & validation</td>
-                  <td>Excel/CSV basics, JSON awareness</td>
-                </tr>
-                <tr>
-                  <td>Verifying data restoration</td>
-                  <td>QA Support</td>
-                  <td>DB integrity checks & alignment</td>
-                  <td>Patience, basic database concepts</td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="muted small">We are considering permanent hires in the future if the startup lands globally successfully.</p>
+        <!-- Anuja Sports University -->
+        <div class="ecos-item">
+          <div class="partner-logo placeholder" aria-hidden="true"></div>
+          <div class="ecos-text">
+            <div class="ecos-title">Anuja Sports University</div>
+            <div class="ecos-sub">Yet to come</div>
+            <div class="ecos-status">Status: Planning</div>
           </div>
         </div>
       </div>
-    </details>
+      <p class="muted small">Descriptions are intentionally minimal; full details will be announced later.</p>
+    </section>
 
-    <!-- Leadership / Ownership (collapsible, minimal) -->
-    <details class="disclosure reveal" open>
-      <summary>Leadership & Ownership</summary>
-      <div class="content">
-        <p>Final authority: <strong>Dhanraj Jagadale</strong>. Ecosystem initiatives operate under strategic oversight.</p>
+    <!-- Contact + Roles -->
+    <section class="grid">
+      <div class="card">
+        <h3>Contact</h3>
+        <ul class="list">
+          <li>General: <a href="mailto:jagadaledhanraj555+info@gmail.com">jagadaledhanraj555+info@gmail.com</a></li>
+          <li>Careers / Internships: <a href="mailto:jagadaledhanraj555+careers@gmail.com">jagadaledhanraj555+careers@gmail.com</a></li>
+        </ul>
+        <p class="muted small">Domain-based emails will be activated later; internal aliases are in use.</p>
       </div>
-    </details>
+
+      <div class="card">
+        <h3>Student Contributor Roles (Current Phase)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Responsibility</th>
+              <th>Focus Area</th>
+              <th>Skill Development</th>
+              <th>Required Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tagging sports footage using predefined labels</td>
+              <td>Annotation</td>
+              <td>Decision-making & rule interpretation</td>
+              <td>Basic football rules, attention to detail</td>
+            </tr>
+            <tr>
+              <td>Organizing clips by event type</td>
+              <td>Data Structuring</td>
+              <td>Taxonomy mapping & classification</td>
+              <td>File organization, logical thinking</td>
+            </tr>
+            <tr>
+              <td>Preparing structured data exports</td>
+              <td>Data Handling</td>
+              <td>Format conversion & validation</td>
+              <td>Excel/CSV basics, JSON awareness</td>
+            </tr>
+            <tr>
+              <td>Verifying data restoration</td>
+              <td>QA Support</td>
+              <td>DB integrity checks & alignment</td>
+              <td>Patience, basic database concepts</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted small">We are considering permanent hires in the future if the startup lands globally successfully.</p>
+      </div>
+    </section>
+
+    <!-- Leadership / Ownership (minimal) -->
+    <section class="card">
+      <h3>Leadership & Ownership</h3>
+      <p>Final authority: <strong>Dhanraj Jagadale</strong>. Ecosystem initiatives operate under strategic oversight.</p>
+    </section>
+
+    <!-- Ecosystem Head Group Logo (Anuja Group) -->
+    <section class="card center">
+      <img src="/ANUJA GROUP.png" alt="ANUJA GROUP" class="group-logo" onerror="this.style.display='none'"/>
+      <p class="muted small">Ecosystem head group</p>
+    </section>
 
     <!-- Footer -->
-    <footer class="foot reveal">
+    <footer class="foot">
       <div>© <span id="y"></span> AIVAR — Work in progress</div>
     </footer>
   </main>
 
-  <!-- Light interactivity -->
-  <script>
-    // reveal-on-scroll
-    const onScroll = () => {
-      document.querySelectorAll('.reveal').forEach(el => {
-        const r = el.getBoundingClientRect();
-        if (r.top < window.innerHeight - 80) el.classList.add('show');
-      });
-    };
-    document.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('load', () => { onScroll(); document.getElementById('y').textContent = new Date().getFullYear(); });
-  </script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
