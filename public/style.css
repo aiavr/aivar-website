@@ -4,6 +4,7 @@
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,Segoe UI,Inter,Arial}
 
 .wrap{max-width:1000px;margin:0 auto;padding:48px 20px}
@@ -21,6 +22,7 @@ body{background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,Segoe UI,Inte
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:14px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
 .card h2,.card h3{margin:0 0 10px}
+.center{text-align:center}
 
 .list{padding-left:18px;margin:0}
 .list li{margin:6px 0}
@@ -30,6 +32,7 @@ body{background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,Segoe UI,Inte
 
 table{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
 th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+thead th{background:rgba(255,255,255,.03)}
 
 .ecos{display:grid;gap:12px}
 .ecos-item{display:flex;gap:12px;align-items:center}
@@ -41,5 +44,16 @@ th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:to
 .ecos-status{font-size:13px;opacity:.8}
 .link{color:#a9c7ff;text-decoration:underline}
 
+.group-logo{width:160px;height:auto;display:inline-block;opacity:.9;margin:4px auto 0}
+
 .foot{opacity:.7;margin-top:32px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;text-align:center}
 
+/* collapsible (details/summary) */
+.disclosure{border:1px solid var(--line);border-radius:12px;background:var(--panel);margin:10px 0}
+.disclosure summary{cursor:pointer;padding:14px 16px;list-style:none;font-weight:700}
+.disclosure[open] summary{border-bottom:1px solid var(--line)}
+.disclosure .content{padding:14px 16px}
+
+/* reveal-on-scroll */
+.reveal{opacity:0;transform:translateY(8px);transition:opacity .5s ease, transform .5s ease}
+.reveal.show{opacity:1;transform:none}

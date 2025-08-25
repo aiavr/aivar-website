@@ -3,15 +3,28 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
   <title>AIVAR — Artificial Intelligence Video Assisted Refereeing</title>
-  <meta name="description" content="AIVAR — work in progress."/>
-  <link rel="icon" href="/favicon.ico"/>
+  <meta name="description" content="AIVAR — fair, fast, official-grade referee support systems. Work in progress."/>
+
+  <!-- Favicon & Search/Social preview -->
+  <link rel="icon" href="/logo.jpg"/>
+  <link rel="apple-touch-icon" href="/logo.jpg"/>
+  <meta property="og:title" content="AIVAR — Artificial Intelligence Video Assisted Refereeing"/>
+  <meta property="og:description" content="Work in progress. Building in private."/>
+  <meta property="og:image" content="/logo.jpg"/>
+  <meta property="og:type" content="website"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="AIVAR — Artificial Intelligence Video Assisted Refereeing"/>
+  <meta name="twitter:description" content="Work in progress. Building in private."/>
+  <meta name="twitter:image" content="/logo.jpg"/>
+
   <link rel="stylesheet" href="/style.css"/>
 </head>
 <body>
   <main class="wrap">
     <!-- Hero -->
-    <header class="hero">
+    <header class="hero reveal">
       <img src="/logo.jpg" alt="AIVAR logo" class="logo"/>
       <h1>AIVAR</h1>
       <p class="tag">Artificial Intelligence Video Assisted Refereeing</p>
@@ -19,104 +32,138 @@
       <div class="cta-row">
         <a class="btn" href="mailto:jagadaledhanraj555+info@gmail.com">Contact</a>
         <a class="btn ghost" href="mailto:jagadaledhanraj555+careers@gmail.com">Internships</a>
+        <!-- Replace mailto with your Google Form when ready -->
+        <a class="btn" href="mailto:jagadaledhanraj555+careers@gmail.com">Apply now</a>
       </div>
     </header>
 
-    <!-- About (very high level) -->
-    <section class="card">
-      <h2>About</h2>
-      <p>AIVAR is a sports technology initiative focused on fair and fast referee support systems.</p>
-    </section>
+    <!-- About (collapsible) -->
+    <details class="disclosure reveal" open>
+      <summary>About</summary>
+      <div class="content">
+        <p>AIVAR is a sports technology initiative focused on fair and fast referee support systems.</p>
+      </div>
+    </details>
 
-    <!-- Ecosystem (minimal, no details) -->
-    <section class="card">
-      <h2>Our Ecosystem</h2>
-      <div class="ecos">
-        <div class="ecos-item">
-          <img src="/anuja-smart-farming-logo.png" alt="Anuja Smart Farming" class="partner-logo" onerror="this.style.display='none'"/>
-          <div class="ecos-text">
-            <div class="ecos-title">Anuja Smart Farming</div>
-            <div class="ecos-sub">Nationwide smart farming partner system</div>
-            <div class="ecos-status">Status: Building</div>
-            <a class="link" href="#" aria-disabled="true">Partner link (soon)</a>
+    <!-- Ecosystem (collapsible, minimal) -->
+    <details class="disclosure reveal" open>
+      <summary>Our Ecosystem</summary>
+      <div class="content">
+        <div class="ecos">
+          <!-- Anuja Smart Farming -->
+          <div class="ecos-item">
+            <img src="/anuja-smart-farming.png" alt="Anuja Smart Farming" class="partner-logo" loading="lazy"/>
+            <div class="ecos-text">
+              <div class="ecos-title">Anuja Smart Farming</div>
+              <div class="ecos-sub">National smart farming partner program</div>
+              <div class="ecos-status">Status: Building</div>
+              <a class="link" href="https://anuja-smart-farming-web.streamlit.app/" target="_blank" rel="noopener">Partner link</a>
+            </div>
+          </div>
+
+          <!-- Anuja Sports University -->
+          <div class="ecos-item">
+            <div class="partner-logo placeholder" aria-hidden="true"></div>
+            <div class="ecos-text">
+              <div class="ecos-title">Anuja Sports University</div>
+              <div class="ecos-sub">Yet to come</div>
+              <div class="ecos-status">Status: Planning</div>
+            </div>
           </div>
         </div>
 
-        <div class="ecos-item">
-          <div class="partner-logo placeholder" aria-hidden="true"></div>
-          <div class="ecos-text">
-            <div class="ecos-title">Anuja Sports University</div>
-            <div class="ecos-sub">Yet to come</div>
-            <div class="ecos-status">Status: Planning</div>
+        <div class="center group-block">
+          <img src="/ANUJA GROUP.png" alt="ANUJA GROUP" class="group-logo" loading="lazy" onerror="this.style.display='none'"/>
+          <p class="muted small">Ecosystem head group</p>
+        </div>
+
+        <p class="muted small">Descriptions are intentionally minimal; full details will be announced later.</p>
+      </div>
+    </details>
+
+    <!-- Contact + Roles (collapsible) -->
+    <details class="disclosure reveal" open>
+      <summary>Contact & Student Contributor Roles</summary>
+      <div class="content">
+        <div class="grid">
+          <div>
+            <h3>Contact</h3>
+            <ul class="list">
+              <li>General: <a href="mailto:jagadaledhanraj555+info@gmail.com">jagadaledhanraj555+info@gmail.com</a></li>
+              <li>Careers / Internships: <a href="mailto:jagadaledhanraj555+careers@gmail.com">jagadaledhanraj555+careers@gmail.com</a></li>
+            </ul>
+            <p class="muted small">Domain-based emails will be activated later; internal aliases are in use.</p>
+          </div>
+
+          <div>
+            <h3>Student Contributor Roles (Current Phase)</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Responsibility</th>
+                  <th>Focus Area</th>
+                  <th>Skill Development</th>
+                  <th>Required Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Tagging sports footage using predefined labels</td>
+                  <td>Annotation</td>
+                  <td>Decision-making & rule interpretation</td>
+                  <td>Basic football rules, attention to detail</td>
+                </tr>
+                <tr>
+                  <td>Organizing clips by event type</td>
+                  <td>Data Structuring</td>
+                  <td>Taxonomy mapping & classification</td>
+                  <td>File organization, logical thinking</td>
+                </tr>
+                <tr>
+                  <td>Preparing structured data exports</td>
+                  <td>Data Handling</td>
+                  <td>Format conversion & validation</td>
+                  <td>Excel/CSV basics, JSON awareness</td>
+                </tr>
+                <tr>
+                  <td>Verifying data restoration</td>
+                  <td>QA Support</td>
+                  <td>DB integrity checks & alignment</td>
+                  <td>Patience, basic database concepts</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="muted small">We are considering permanent hires in the future if the startup lands globally successfully.</p>
           </div>
         </div>
       </div>
-      <p class="muted small">Descriptions are intentionally minimal; full details will be announced later.</p>
-    </section>
+    </details>
 
-    <!-- Contact + Roles -->
-    <section class="grid">
-      <div class="card">
-        <h3>Contact</h3>
-        <ul class="list">
-          <li>General: <a href="mailto:jagadaledhanraj555+info@gmail.com">jagadaledhanraj555+info@gmail.com</a></li>
-          <li>Careers / Internships: <a href="mailto:jagadaledhanraj555+careers@gmail.com">jagadaledhanraj555+careers@gmail.com</a></li>
-        </ul>
-        <p class="muted small">Domain-based emails will be activated later; internal aliases are in use.</p>
+    <!-- Leadership / Ownership (collapsible, minimal) -->
+    <details class="disclosure reveal" open>
+      <summary>Leadership & Ownership</summary>
+      <div class="content">
+        <p>Final authority: <strong>Dhanraj Jagadale</strong>. Ecosystem initiatives operate under strategic oversight.</p>
       </div>
-
-      <div class="card">
-        <h3>Student Contributor Roles (Current Phase)</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Responsibility</th>
-              <th>Category Fit</th>
-              <th>Skill Type</th>
-              <th>Career Value</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Labeling clips with decision taxonomy</td>
-              <td>Annotation / Sports Analytics</td>
-              <td>Rule interpretation</td>
-              <td>Sports tech + ML-ready datasets</td>
-            </tr>
-            <tr>
-              <td>Segregating clips by event type</td>
-              <td>Data Curation</td>
-              <td>Taxonomy mapping</td>
-              <td>Structured data pipelines</td>
-            </tr>
-            <tr>
-              <td>Filling CSV / JSONL exports</td>
-              <td>Data Engineering (Entry)</td>
-              <td>Format conversion, validation</td>
-              <td>Real-world data handling</td>
-            </tr>
-            <tr>
-              <td>Testing data restoration to DB</td>
-              <td>Backend QA / Data Ops</td>
-              <td>DB integrity checks</td>
-              <td>Production-grade credibility</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Leadership / Ownership (minimal) -->
-<section class="card">
-  <h3>Leadership & Ownership</h3>
-  <p>Final authority: <strong>Dhanraj Jagadale</strong>. Ecosystem initiatives operate under strategic oversight.</p>
-</section>
+    </details>
 
     <!-- Footer -->
-    <footer class="foot">
+    <footer class="foot reveal">
       <div>© <span id="y"></span> AIVAR — Work in progress</div>
     </footer>
   </main>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <!-- Light interactivity -->
+  <script>
+    // reveal-on-scroll
+    const onScroll = () => {
+      document.querySelectorAll('.reveal').forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight - 80) el.classList.add('show');
+      });
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('load', () => { onScroll(); document.getElementById('y').textContent = new Date().getFullYear(); });
+  </script>
 </body>
 </html>
